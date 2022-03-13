@@ -55,7 +55,7 @@ class AccessTest < ActiveSupport::TestCase
     assert_equal 5, [].average(5)
     assert_equal "Random string", [].average("Random string")
 
-    string_list = %w(a b c)
+    string_list = %w(a b c d)
     assert_nil string_list.average
     assert_equal 15, string_list.average(15)
     assert_equal "Random string", string_list.average("Random string")
